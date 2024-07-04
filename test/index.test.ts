@@ -16,7 +16,7 @@ describe('errx', () => {
           "column": "<number>",
           "function": undefined,
           "line": "<number>",
-          "source": "file:///Users/daniel/code/danielroe/errx/test/index.test.ts",
+          "source": "${import.meta.url}",
         },
         {
           "column": "<number>",
