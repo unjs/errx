@@ -23,10 +23,10 @@ export function captureRawStackTrace() {
 export function captureStackTrace() {
   const stack = captureRawStackTrace()
 
-  return stack ? parseStackTrace(stack) : []
+  return stack ? parseRawStackTrace(stack) : []
 }
 
-export function parseStackTrace(stacktrace: string) {
+export function parseRawStackTrace(stacktrace: string) {
   const trace: ParsedTrace[] = []
   for (const line of stacktrace.split('\n')) {
     const parsed = LINE_RE.exec(line)?.groups as Partial<Record<keyof ParsedTrace, string>> | undefined

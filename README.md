@@ -20,7 +20,7 @@ pnpm install errx
 ```
 
 ```js
-import { captureRawStackTrace, captureStackTrace, parseStackTrace } from 'errx'
+import { captureRawStackTrace, captureStackTrace, parseRawStackTrace } from 'errx'
 
 // returns raw string stack trace
 captureRawStackTrace()

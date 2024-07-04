@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import { captureStackTrace, parseStackTrace } from '../src'
+import { captureStackTrace, parseRawStackTrace } from '../src'
 
 describe('errx', () => {
   it('works', () => {
@@ -112,15 +112,15 @@ Error
 
 describe('parseStackTrace', () => {
   it('parses vitest', () => {
-    expect(parseStackTrace(vitestTrace)).toMatchFileSnapshot('__snapshots__/vitest.json5')
+    expect(parseRawStackTrace(vitestTrace)).toMatchFileSnapshot('__snapshots__/vitest.json5')
   })
   it('parses jiti', () => {
-    expect(parseStackTrace(jitiTrace)).toMatchFileSnapshot('__snapshots__/jiti.json5')
+    expect(parseRawStackTrace(jitiTrace)).toMatchFileSnapshot('__snapshots__/jiti.json5')
   })
   it('parses bun', () => {
-    expect(parseStackTrace(bunTrace)).toMatchFileSnapshot('__snapshots__/bun.json5')
+    expect(parseRawStackTrace(bunTrace)).toMatchFileSnapshot('__snapshots__/bun.json5')
   })
   it('parses deno', () => {
-    expect(parseStackTrace(denoTrace)).toMatchFileSnapshot('__snapshots__/deno.json5')
+    expect(parseRawStackTrace(denoTrace)).toMatchFileSnapshot('__snapshots__/deno.json5')
   })
 })
