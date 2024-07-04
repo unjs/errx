@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.4.0",
   "description": "Zero dependency library to capture and parse stack traces in Node, Bun and Deno",
   "license": "MIT",
-  "repository": "danielroe/errx",
+  "repository": "unjs/errx",
   "sideEffects": false,
   "exports": {
     ".": "./dist/index.js"
