@@ -1,0 +1,8 @@
+[
+  {
+    "column": 9,
+    "function": "captureStackTrace",
+    "line": 19,
+    "source": "file:///some/path",
+  },
+]

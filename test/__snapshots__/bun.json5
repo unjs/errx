@@ -1,0 +1,26 @@
+[
+  {
+    "function": "moduleEvaluation",
+    "source": "native",
+  },
+  {
+    "function": "moduleEvaluation",
+    "source": "native",
+  },
+  {
+    "function": "<anonymous>",
+    "source": "native",
+  },
+  {
+    "function": "asyncFunctionResume",
+    "source": "native",
+  },
+  {
+    "function": "promiseReactionJobWithoutPromiseUnwrapAsyncContext",
+    "source": "native",
+  },
+  {
+    "function": "promiseReactionJob",
+    "source": "native",
+  },
+]
