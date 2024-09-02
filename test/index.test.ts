@@ -38,6 +38,12 @@ describe('errx', () => {
         },
         {
           "column": "<number>",
+          "function": "processTicksAndRejections",
+          "line": "<number>",
+          "source": "node:internal/process/task_queues",
+        },
+        {
+          "column": "<number>",
           "function": "runSuite",
           "line": "<number>",
           "source": "@vitest/runner/dist/index.js",
@@ -51,12 +57,6 @@ describe('errx', () => {
         {
           "column": "<number>",
           "function": "runFiles",
-          "line": "<number>",
-          "source": "@vitest/runner/dist/index.js",
-        },
-        {
-          "column": "<number>",
-          "function": "startTests",
           "line": "<number>",
           "source": "@vitest/runner/dist/index.js",
         },
